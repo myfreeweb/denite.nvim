@@ -1597,8 +1597,12 @@ directory	An interface to change directory.
 				Narrow by the directory.
 
 			cd
-				Change the Vim current directory to the
-				directory.
+				Change the Vim current window directory to
+				the directory.
+
+			tcd
+				Change the Vim current tab directory to
+				the directory (neovim only).
 
 			open
 				Open the directory.

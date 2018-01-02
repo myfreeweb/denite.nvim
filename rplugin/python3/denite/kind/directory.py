@@ -20,6 +20,10 @@ class Kind(Base):
         target = context['targets'][0]
         self.vim.command('lcd {}'.format(target['action__path']))
 
+    def action_tcd(self, context):
+        target = context['targets'][0]
+        self.vim.command('tcd {}'.format(target['action__path']))
+
     def action_narrow(self, context):
         target = context['targets'][0]
         context['sources_queue'].append([
